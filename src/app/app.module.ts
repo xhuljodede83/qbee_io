@@ -5,6 +5,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 // Angular Material Imports
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -14,6 +16,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 // Angular App Pages Imports
 import { HomeComponent } from './modules/pages/home/home.component';
@@ -45,13 +48,16 @@ import { LogoComponent } from './modules/shared/logo/logo.component';
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatSidenavModule,
     MatListModule,
     MatIconModule,
     MatPaginatorModule,
     MatTableModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatFormFieldModule
   ],
   exports: [
     MatSidenavModule,
@@ -60,7 +66,8 @@ import { LogoComponent } from './modules/shared/logo/logo.component';
     MatPaginatorModule,
     MatTableModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

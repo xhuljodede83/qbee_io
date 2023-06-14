@@ -24,7 +24,7 @@ export class DeviceService {
 
   }
 
-  public getDevice(id: string){
-
+  public getDevice(name: string){
+    return this.http.get<IDevice[]>(`${this._url}?name=${name}`);
   }
 }
