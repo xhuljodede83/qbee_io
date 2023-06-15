@@ -1,28 +1,32 @@
 # QbeeIo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
+This project uses Angular version 14.1.3.
 
-## Development server
+# Overview
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+A device listing project made with Angular 14 and Typescript.
+Material Design is used as a styling agent for this project along with custom styles.
 
-## Code scaffolding
+## Steps to Setup and Run Project
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- npm install (install all required dependencies)
+- ng serve –open (Runs Angular Server)
+- json-server --watch src/app/server/db.json --port 5000 (Runs a fake server using provided json, to mimik the behaviour of an actual backend server)
 
-## Build
+## Project Navigation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- "/", "/home" routes for Home Page (Default Page)
+- "/devices" Route for Device Listing
+- "/device/:id" Route for Device Listing and Edit Device Details
+- "/support" Route for Support Page
 
-## Running unit tests
+## Responsive Endpoint
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- at 600px Project Moves to Responsive design and is responsive on varius screen sizes
 
-## Running end-to-end tests
+## Testing Application
+- Adding invalid route shows an empty page
+- For Device List Page, Trying to Submit form without name, disables save button.
+- Submit with name as empty string, shows error message to add valid name string.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# qbee_io
