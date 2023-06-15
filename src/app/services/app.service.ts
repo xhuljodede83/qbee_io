@@ -9,16 +9,7 @@ export class AppService {
   drawerOpened$ = new BehaviorSubject(true);
   title$ = new BehaviorSubject('');
 
-  public readonly windowSizeChanged = new BehaviorSubject<number>(
-    window.innerWidth
-  );
-
   constructor() {
-    fromEvent(window, 'resize')
-      .pipe(map((event: any) => event.currentTarget.innerWidth))
-      .subscribe((windowSize) => {
-        this.windowSizeChanged.next(windowSize);
-      });
   }
 
   toggleDrawer() {

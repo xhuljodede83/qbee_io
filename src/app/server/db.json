@@ -4,10 +4,9 @@
       "id": 1,
       "name": "device 1",
       "tags": [
-        "dsfjjsdfj",
-        "dsfjjsdfj",
-        "tag1",
-        "sjfsd"
+        "Device",
+        "Tags",
+        "Workin"
       ],
       "description": "[Intervention] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Book.woff2"
     },
@@ -15,7 +14,6 @@
       "id": 2,
       "name": "device 2",
       "tags": [
-        "tag1",
         "superLongTag"
       ],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut"
@@ -23,8 +21,10 @@
     {
       "id": 3,
       "name": "device 3",
-      "tags": [],
-      "description": ""
+      "tags": [
+        "new tag"
+      ],
+      "description": "Hello World Hello World Hello World Hello World Hello World Hello World Hello World Hello World"
     }
   ]
 }
