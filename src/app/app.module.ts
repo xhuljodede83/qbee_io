@@ -30,7 +30,6 @@ import { DeviceComponent } from './modules/pages/device/device.component';
 
 // Angular App Component Imports
 import { SideBarComponent } from './modules/shared/side-bar/side-bar.component';
-import { FooterComponent } from './modules/shared/footer/footer.component';
 import { HeaderComponent } from './modules/shared/header/header.component';
 import { LogoComponent } from './modules/shared/logo/logo.component';
 
@@ -39,7 +38,6 @@ import { LogoComponent } from './modules/shared/logo/logo.component';
   declarations: [
     AppComponent,
     SideBarComponent,
-    FooterComponent,
     HeaderComponent,
     LogoComponent,
     HomeComponent,

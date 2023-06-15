@@ -6,11 +6,11 @@ import { SupportComponent } from './modules/pages/support/support.component';
 import { DeviceComponent } from './modules/pages/device/device.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'devices', component: DevicesComponent },
   { path: 'devices/:id', component: DeviceComponent },
   { path: 'support', component: SupportComponent },
+  {path: '', redirectTo: '/home', pathMatch: 'full'}
 ];
 
 @NgModule({
