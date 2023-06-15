@@ -1,0 +1,43 @@
+mat-drawer-container {
+    width: 100vw;
+    height: calc(100vh - 80px) !important;
+    display: flex;
+    flex-direction: row;
+}
+
+mat-drawer {
+    background-color: #eeeef4;
+    ;
+    width: 300px;
+    height: 100vh !important;
+}
+
+mat-drawer-content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.menu-bar {
+    background-color: var(--secondary);
+    padding: 8px 0px;
+}
+
+.menu-btn {
+    width: 50px;
+    color: var(--secondary) !important;
+    background-color: white;
+    margin: 0px 15px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    mat-drawer-container {
+        height: calc(100vh - 150px) !important;
+    }
+}
