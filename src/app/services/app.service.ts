@@ -6,12 +6,15 @@ import { map } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class AppService {
+  // This class will be used to handle Title update for Each page and to toggle drawer open/close in responsive mode
+
   drawerOpened$ = new BehaviorSubject(true);
   title$ = new BehaviorSubject('');
 
   constructor() {
   }
 
+  // Functions to tack drawer toggle
   toggleDrawer() {
     this.drawerOpened$.next(!this.drawerOpened$.getValue());
   }
@@ -24,6 +27,7 @@ export class AppService {
     this.drawerOpened$.next(true);
   }
 
+  // Function to update Page Title
   updateTitle(title: string) {
     this.title$.next(title);
   }

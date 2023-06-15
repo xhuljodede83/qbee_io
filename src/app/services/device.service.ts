@@ -17,12 +17,9 @@ export class DeviceService {
 
   constructor(private http: HttpClient) {}
 
+  // API calls to connect with backend to Perform CRUD Operations
   public getAllDevices(){
     return this.http.get<IDevice[]>(this._url);
-  }
-
-  public addDevice(deviceData: IDevice){
-    return this.http.post<IDevice>(this._url, deviceData, httpOptions);
   }
 
   public editDevice(deviceData: IDevice){
