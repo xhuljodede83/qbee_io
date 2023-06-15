@@ -1,0 +1,37 @@
+:host {
+	display: block;
+
+	@media screen and (min-width: 600px) {
+		width: 400px;
+	}
+
+	min-height: 72px;
+
+	mat-form-field {
+		display: block;
+	}
+}
+
+.chip-list {
+	width: 100%;
+}
+
+.btn-group {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.btn-group button {
+	width: 120px;
+}
+
+
+.save-btn {
+	color: var(--light);
+	background-color: var(--primary);
+}
+
+.save-btn:hover:enabled {
+	background-color: var(--secondary);
+}

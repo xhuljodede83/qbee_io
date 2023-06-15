@@ -1,0 +1,33 @@
+<mat-card class="table-card">
+	<table mat-table [dataSource]="dataSource">
+		<!-- Name Column -->
+		<ng-container matColumnDef="device_name">
+			<th colspan="2" mat-header-cell *matHeaderCellDef> Name </th>
+			<td colspan="2" mat-cell *matCellDef="let device">
+				<a [routerLink]="['/devices', device.id]">{{capitalizeName(device.name)}}</a>
+			</td>
+		</ng-container>
+
+		<!-- Tags Column -->
+		<ng-container matColumnDef="device_tags">
+			<th colspan="8" mat-header-cell *matHeaderCellDef> Tags </th>
+			<td colspan="8" mat-cell *matCellDef="let device"> {{getTagsList(device.tags)}} </td>
+		</ng-container>
+
+		<!-- Description indicator Column -->
+		<ng-container matColumnDef="device_desc_indicator">
+			<th colspan="1" mat-header-cell *matHeaderCellDef> Desc Indicator </th>
+			<td colspan="1" mat-cell *matCellDef="let device">
+				<div class="color-circle" [style.backgroundColor]="getDescIndicatorColor(device.description)"></div>
+			</td>
+		</ng-container>
+
+		<tr mat-header-row *matHeaderRowDef="columns"></tr>
+		<tr mat-row *matRowDef="let row; columns: columns"></tr>
+	</table>
+
+	<mat-paginator [length]="devices.length" [pageSize]="10" [pageSizeOptions]="[10, 20, 40]" showFirstLastButtons
+		aria-label="Select Devices Per Page">
+	</mat-paginator>
+
+</mat-card>

@@ -1,0 +1,16 @@
+.header {
+    height: 80px;
+    width: calc(100vw - 300px);
+    background-color: #eeeef4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        height: 80px;
+        width: calc(100vw - 140px);
+    }
+}

@@ -1,0 +1,20 @@
+<div class="menu-bar" *ngIf="windowSize <= 600">
+	<div class="menu-btn" (click)="appService.toggleDrawer()">
+		<button mat-icon-button class="menu-icon">
+			<mat-icon>menu</mat-icon>
+		</button>
+	</div>
+</div>
+<mat-drawer-container>
+	<mat-drawer #sideMenu [mode]="(windowSize) < 600 ? 'over' : 'side'" [opened]="appService.drawerOpened$ | async">
+		<mat-nav-list class="text-center">
+			<a mat-list-item *ngFor="let link of adminLinks" [routerLink]="link.path" routerLinkActive="link.path">
+				{{ link.label }}
+			</a>
+		</mat-nav-list>
+	</mat-drawer>
+	<mat-drawer-content>
+		<!-- On Click through navigation link, Respective component will render here without page reload -->
+		<router-outlet></router-outlet>
+	</mat-drawer-content>
+</mat-drawer-container>

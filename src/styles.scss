@@ -1,0 +1,97 @@
+// Declaring global colors
+:root {
+	--primary: #084056;
+	--secondary: #043048;
+	--third: #043447;
+	--light: #ffffff;
+	--dark: #000;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: Roboto, "Helvetica Neue", sans-serif;
+	color: var(--light);
+}
+
+h1,
+h2,
+h4 {
+	margin: 0px !important;
+	color: var(--dark);
+}
+
+.page {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content {
+	background-color: #eeeef4;
+}
+
+// App Styles
+.table-card {
+	overflow: auto;
+}
+
+.header-text {
+	color: var(--third);
+	font-weight: bold !important;
+	letter-spacing: 1px !important;
+}
+
+.headline-text {
+	color: var(--third);
+}
+
+.email {
+	margin-left: 10px;
+	color: var(--secondary);
+}
+
+// Re-useable style classes
+.disp-flex {
+	display: flex;
+	align-items: center;
+}
+
+.text-center {
+	text-align: center;
+}
+
+// Width Styles
+.logo-width {
+	width: 300px;
+	background-color: #ffffff;
+}
+
+.width-100 {
+	width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+
+	.logo-width {
+		width: 140px;
+		background-color: #ffffff;
+	}
+
+	.flex-col {
+		display: flex;
+		flex-direction: column;
+	}
+}
