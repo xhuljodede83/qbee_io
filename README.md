@@ -12,7 +12,7 @@ Material Design is used as a styling agent for this project along with custom st
 - npm install (install all required dependencies)
 - ng serve –open (Runs Angular Server)
 - json-server --watch src/app/server/db.json --port 5000 (Runs a fake server using provided json, to mimik the behaviour of an actual backend server)
-
+- Please install json server from here (https://www.npmjs.com/package/json-server)
 ## Project Navigation
 
 - "/", "/home" routes for Home Page (Default Page)
