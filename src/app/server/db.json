@@ -2,15 +2,11 @@
   "devices": [
     {
       "id": 1,
-      "name": "Empty",
+      "name": "Tag Helper",
       "tags": [
-        "Device",
-        "Tags",
-        "Workin",
-        "VeryLongTagg",
-        "Full"
+        "tag_name"
       ],
-      "description": "[Intervention] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Book.woff2"
+      "description": "Enter a tag then press (Enter key or comma key) to save it"
     },
     {
       "id": 2,

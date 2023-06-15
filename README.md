@@ -20,13 +20,4 @@ Material Design is used as a styling agent for this project along with custom st
 - "/device/:id" Route for Device Listing and Edit Device Details
 - "/support" Route for Support Page
 
-## Responsive Endpoint
-
-- at 600px Project Moves to Responsive design and is responsive on varius screen sizes
-
-## Testing Application
-- Adding invalid route shows an empty page
-- For Device List Page, Trying to Submit form without name, disables save button.
-- Submit with name as empty string, shows error message to add valid name string.
-
 
