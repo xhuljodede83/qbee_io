@@ -1,7 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs';
 import { IDevice } from '../interfaces/device';
+
+const httpOptions = {
+  headers: new HttpHeaders({
+    'Content-Type': 'application/json',
+  }),
+};
 
 @Injectable({
   providedIn: 'root'
@@ -17,14 +22,14 @@ export class DeviceService {
   }
 
   public addDevice(deviceData: IDevice){
-
+    return this.http.post<IDevice>(this._url, deviceData, httpOptions);
   }
 
-  public editDevice(id: string, deviceData: IDevice){
-
+  public editDevice(deviceData: IDevice){
+    return this.http.put<IDevice>(`${this._url}/${deviceData.id}`, deviceData, httpOptions);
   }
 
-  public getDevice(name: string){
-    return this.http.get<IDevice[]>(`${this._url}?name=${name}`);
+  public getDevice(id: string){
+    return this.http.get<IDevice>(`${this._url}/${id}`);
   }
 }
