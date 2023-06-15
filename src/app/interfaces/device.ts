@@ -1,8 +1,6 @@
-import { ITag } from "./tag";
-
-export interface IDevice{
-  id?: number;
+export interface IDevice {
+	id?: number;
 	name: string;
-	tags: ITag[];
+	tags: string[];
 	description: string;
 }

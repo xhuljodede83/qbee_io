@@ -16,7 +16,11 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
 // Angular App Pages Imports
 import { HomeComponent } from './modules/pages/home/home.component';
@@ -57,7 +61,11 @@ import { LogoComponent } from './modules/shared/logo/logo.component';
     MatTableModule,
     MatButtonModule,
     MatCardModule,
-    MatFormFieldModule
+    MatInputModule,
+    MatFormFieldModule,
+    MatSnackBarModule,
+    MatChipsModule,
+    MatAutocompleteModule
   ],
   exports: [
     MatSidenavModule,
@@ -67,7 +75,11 @@ import { LogoComponent } from './modules/shared/logo/logo.component';
     MatTableModule,
     MatButtonModule,
     MatCardModule,
-    MatFormFieldModule
+    MatInputModule,
+    MatFormFieldModule,
+    MatSnackBarModule,
+    MatChipsModule,
+    MatAutocompleteModule
   ],
   providers: [],
   bootstrap: [AppComponent]
